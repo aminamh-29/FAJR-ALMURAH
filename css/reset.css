@@ -1,0 +1,125 @@
+/* ==========================================
+   CSS RESET
+========================================== */
+
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ==========================================
+   HTML & BODY
+========================================== */
+
+html{
+    scroll-behavior:smooth;
+    -webkit-text-size-adjust:100%;
+}
+
+body{
+    min-height:100vh;
+    text-rendering:optimizeSpeed;
+    line-height:1.5;
+}
+
+/* ==========================================
+   MEDIA ELEMENTS
+========================================== */
+
+img,
+picture,
+svg,
+video,
+canvas{
+    display:block;
+    max-width:100%;
+}
+
+/* ==========================================
+   FORM ELEMENTS
+========================================== */
+
+input,
+button,
+textarea,
+select{
+    font:inherit;
+    border:none;
+    outline:none;
+}
+
+textarea{
+    resize:vertical;
+}
+
+/* ==========================================
+   LINKS
+========================================== */
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+/* ==========================================
+   LISTS
+========================================== */
+
+ul,
+ol{
+    list-style:none;
+}
+
+/* ==========================================
+   TABLES
+========================================== */
+
+table{
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* ==========================================
+   HEADINGS
+========================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-weight:inherit;
+}
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+button{
+    cursor:pointer;
+    background:none;
+}
+
+/* ==========================================
+   REMOVE ANIMATIONS FOR USERS WHO PREFER IT
+========================================== */
+
+@media (prefers-reduced-motion: reduce){
+
+    html:focus-within{
+        scroll-behavior:auto;
+    }
+
+    *,
+    *::before,
+    *::after{
+        animation-duration:0.01ms !important;
+        animation-iteration-count:1 !important;
+        transition-duration:0.01ms !important;
+        scroll-behavior:auto !important;
+    }
+}

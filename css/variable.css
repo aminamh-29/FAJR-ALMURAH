@@ -1,0 +1,41 @@
+:root {
+
+    /* Brand Colors */
+    --navy:        #0A1F3C;
+    --navy-mid:    #0D2B52;
+    --blue:        #0057B8;
+    --blue-dark:   #003F88;
+    --gold:        #C9A84C;
+    --gold-light:  #E5C97A;
+
+    /* Neutral */
+    --white:       #FFFFFF;
+    --off-white:   #F9F7F4;
+    --light:       #F4F6FA;
+    --border:      #E2E8F0;
+    --text:        #4A5568;
+    --text-dark:   #1A202C;
+    --text-light:  #718096;
+
+    /* Shadows */
+    --shadow-sm:   0 2px 8px  rgba(0, 0, 0, 0.06);
+    --shadow-md:   0 8px 24px rgba(0, 0, 0, 0.10);
+    --shadow-lg:   0 20px 60px rgba(0, 0, 0, 0.14);
+
+    /* Radius */
+    --radius-sm:   6px;
+    --radius-md:   12px;
+    --radius-lg:   20px;
+    --radius-xl:   32px;
+    --radius-full: 100px;
+
+    /* Transition */
+    --ease:        0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+    /* Container */
+    --max-width:   1320px;
+
+    /* Fonts */
+    --font-serif:  'Playfair Display', serif;
+    --font-sans:   'Poppins', sans-serif;
+}
