@@ -584,6 +584,202 @@ html{ scroll-behavior: smooth; }
     line-height: 1.75;
 }
 
+/* =============================================
+   CIVIL WORKS
+============================================= */
+
+.civil-works { background: var(--light); }
+
+.civil-works-layout {
+    display: grid;
+    grid-template-columns: 1fr 420px;
+    gap: 64px;
+    align-items: center;
+}
+
+.civil-works-content {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.civil-works-content .section-tag {
+    display: inline-block;
+    color: var(--gold);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.civil-works-content h2 {
+    font-family: var(--font-serif);
+    font-size: clamp(30px, 4vw, 44px);
+    color: var(--navy);
+    font-weight: 700;
+    line-height: 1.15;
+    margin-top: -4px;
+}
+
+.civil-works-intro {
+    font-family: var(--font-sans);
+    font-size: 16px;
+    color: var(--text);
+    line-height: 1.9;
+}
+
+.civil-works-body {
+    font-family: var(--font-sans);
+    font-size: 15px;
+    color: var(--text-light);
+    line-height: 1.9;
+    margin-top: -8px;
+}
+
+.civil-works-features {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 8px;
+    border-top: 1px solid var(--border);
+}
+
+.civil-feature-card {
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+    background: var(--white);
+    padding: 22px 24px;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border);
+    transition: box-shadow var(--ease), transform var(--ease);
+}
+
+.civil-feature-card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+}
+
+.civil-feature-icon {
+    width: 44px;
+    height: 44px;
+    background: linear-gradient(135deg, var(--navy), var(--navy-mid));
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.civil-feature-icon svg {
+    width: 22px;
+    height: 22px;
+    stroke: var(--gold);
+}
+
+.civil-feature-card h4 {
+    font-family: var(--font-sans);
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 6px;
+}
+
+.civil-feature-card p {
+    font-family: var(--font-sans);
+    font-size: 13.5px;
+    color: var(--text-light);
+    line-height: 1.75;
+}
+
+.civil-works-visual { height: 100%; }
+
+.civil-stat-block {
+    background: var(--navy);
+    border-radius: var(--radius-lg);
+    padding: 48px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    position: relative;
+    overflow: hidden;
+}
+
+.civil-stat-block::before {
+    content: '';
+    position: absolute;
+    top: -60px; right: -60px;
+    width: 200px; height: 200px;
+    border-radius: 50%;
+    background: rgba(201, 168, 76, 0.08);
+}
+
+.civil-stat {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.civil-stat:last-of-type { border-bottom: none; padding-bottom: 0; }
+
+.civil-stat-num {
+    font-family: var(--font-serif);
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--gold);
+    line-height: 1;
+}
+
+.civil-stat-label {
+    font-family: var(--font-sans);
+    font-size: 13px;
+    font-weight: 500;
+    color: rgba(255,255,255,0.6);
+    letter-spacing: 0.3px;
+}
+
+.civil-works-badge {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: rgba(201, 168, 76, 0.12);
+    border: 1px solid rgba(201, 168, 76, 0.25);
+    border-radius: var(--radius-md);
+    padding: 14px 20px;
+    margin-top: -8px;
+}
+
+.civil-works-badge svg {
+    width: 22px;
+    height: 22px;
+    stroke: var(--gold);
+    flex-shrink: 0;
+}
+
+.civil-works-badge span {
+    font-family: var(--font-sans);
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--gold);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1024px) {
+    .civil-works-layout { grid-template-columns: 1fr; gap: 40px; }
+    .civil-stat-block { flex-direction: row; flex-wrap: wrap; gap: 24px; padding: 36px 32px; }
+    .civil-stat { border-bottom: none; padding-bottom: 0; border-right: 1px solid rgba(255,255,255,0.08); padding-right: 24px; }
+    .civil-stat:last-of-type { border-right: none; padding-right: 0; }
+    .civil-works-badge { width: 100%; }
+}
+
+@media (max-width: 600px) {
+    .civil-stat-block { flex-direction: column; }
+    .civil-stat { border-right: none; padding-right: 0; border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 20px; }
+}
+
 .about-card {
     background: var(--white);
     padding: 48px 44px;
