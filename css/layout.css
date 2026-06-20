@@ -15,15 +15,22 @@ section {
     height: 80px;
 }
 
+.about-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: center;
+}
+
 .about-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     gap: 32px;
 }
 
 .values-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 24px;
 }
 
@@ -53,6 +60,7 @@ footer .container {
 /* Responsive */
 @media (max-width: 1200px) {
     .values-grid    { grid-template-columns: repeat(2, 1fr); }
+
     .services-grid  { grid-template-columns: repeat(2, 1fr); }
     .consultancy-grid { grid-template-columns: repeat(2, 1fr); }
     .stats-grid     { grid-template-columns: repeat(2, 1fr); }
@@ -60,6 +68,7 @@ footer .container {
 
 @media (max-width: 768px) {
     section { padding: 80px 0; }
+    .about-layout,
     .about-grid,
     .values-grid,
     .services-grid,
