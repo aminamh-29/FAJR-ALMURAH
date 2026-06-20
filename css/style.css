@@ -456,7 +456,7 @@ html{ scroll-behavior: smooth; }
     text-transform: uppercase;
 }
 
-.about-content { display: flex; flex-direction: column; gap: 20px; }
+.about-content { display: flex; flex-direction: column; gap: 24px; }
 
 .about-content .section-tag {
     display: inline-block;
@@ -469,31 +469,87 @@ html{ scroll-behavior: smooth; }
 
 .about-content h2 {
     font-family: var(--font-serif);
-    font-size: clamp(28px, 4vw, 42px);
+    font-size: clamp(30px, 4vw, 44px);
     color: var(--navy);
     font-weight: 700;
-    line-height: 1.2;
+    line-height: 1.15;
+    margin-top: -4px;
+}
+
+.about-divider {
+    width: 56px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--gold), var(--gold-light));
+    border-radius: 2px;
+    margin-top: -8px;
 }
 
 .about-intro {
+    font-family: var(--font-sans);
     font-size: 16px;
     color: var(--text);
-    line-height: 1.85;
+    line-height: 1.9;
+    font-weight: 400;
 }
 
 .about-body {
+    font-family: var(--font-sans);
     font-size: 15px;
     color: var(--text-light);
-    line-height: 1.85;
+    line-height: 1.9;
+    font-weight: 400;
+}
+
+.about-services-label {
+    font-family: var(--font-sans);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--text-light);
+    margin-bottom: -8px;
+}
+
+.about-services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px 16px;
+}
+
+.about-service-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-sans);
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--navy);
+    padding: 9px 14px;
+    background: var(--light);
+    border-radius: var(--radius-md);
+    border-left: 3px solid var(--gold);
+    transition: background var(--ease), transform var(--ease);
+}
+
+.about-service-item:hover {
+    background: #EDF2FF;
+    transform: translateX(3px);
+}
+
+.about-service-item svg {
+    width: 14px;
+    height: 14px;
+    color: var(--gold);
+    flex-shrink: 0;
+    display: none;
 }
 
 .about-highlights {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 24px 0;
+    padding: 24px 0 0;
     border-top: 1px solid var(--border);
-    border-bottom: 1px solid var(--border);
 }
 
 .about-highlight-item {
@@ -513,42 +569,19 @@ html{ scroll-behavior: smooth; }
 }
 
 .about-highlight-item h4 {
-    font-family: var(--font-serif);
-    font-size: 16px;
+    font-family: var(--font-sans);
+    font-size: 14px;
     font-weight: 600;
     color: var(--navy);
-    margin-bottom: 6px;
+    margin-bottom: 5px;
+    letter-spacing: 0.2px;
 }
 
 .about-highlight-item p {
-    font-size: 14px;
+    font-family: var(--font-sans);
+    font-size: 13.5px;
     color: var(--text-light);
     line-height: 1.75;
-}
-
-.about-pills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 8px;
-}
-
-.about-pills span {
-    padding: 6px 16px;
-    border: 1px solid var(--border);
-    border-radius: var(--radius-full);
-    font-size: 12px;
-    font-weight: 600;
-    color: var(--navy);
-    letter-spacing: 0.3px;
-    background: var(--white);
-    transition: var(--ease);
-}
-
-.about-pills span:hover {
-    background: var(--gold);
-    border-color: var(--gold);
-    color: var(--white);
 }
 
 .about-card {

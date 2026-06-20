@@ -74,5 +74,10 @@ footer .container {
     .services-grid,
     .consultancy-grid,
     .stats-grid { grid-template-columns: 1fr; }
+    .about-services-grid { grid-template-columns: repeat(2, 1fr); }
     .container { width: 92%; }
+}
+
+@media (max-width: 480px) {
+    .about-services-grid { grid-template-columns: 1fr; }
 }
