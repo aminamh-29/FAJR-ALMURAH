@@ -784,6 +784,303 @@ html{ scroll-behavior: smooth; }
     .civil-stat-item { flex: 1 1 calc(50% - 1px); border-bottom: 1px solid var(--border); }
 }
 
+/* ── Office & Shop Fit Out ── */
+.fitout {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 96px 0;
+}
+
+.fitout-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(8, 12, 24, 0.82);
+}
+
+.fitout-container {
+    position: relative;
+    z-index: 1;
+}
+
+.fitout-header {
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.fitout-header .section-tag { display: inline-block; }
+
+.fitout-header h2 {
+    font-family: var(--font-serif);
+    font-size: clamp(2rem, 3.5vw, 3rem);
+    font-weight: 700;
+    color: var(--white);
+    line-height: 1.2;
+    margin-top: 12px;
+}
+
+.fitout-header .about-divider { margin: 16px auto 0; }
+
+.fitout-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.fitout-content { display: flex; flex-direction: column; gap: 20px; }
+
+.fitout-points {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.fitout-point {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: var(--radius);
+    padding: 20px;
+    transition: var(--ease);
+    backdrop-filter: blur(8px);
+}
+
+.fitout-point:hover {
+    background: rgba(255, 255, 255, 0.11);
+    border-color: var(--primary);
+}
+
+.fitout-point-icon {
+    width: 44px;
+    height: 44px;
+    background: var(--primary);
+    border-radius: var(--radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.fitout-point-icon svg {
+    width: 20px;
+    height: 20px;
+    stroke: var(--white);
+}
+
+.fitout-point h4 {
+    font-family: var(--font-sans);
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 4px;
+}
+
+.fitout-point p {
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.65);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.fitout-quote {
+    background: var(--primary);
+    border-radius: var(--radius-lg);
+    padding: 24px 28px;
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+}
+
+.fitout-quote-mark {
+    font-family: var(--font-serif);
+    font-size: 3.5rem;
+    color: rgba(255,255,255,0.5);
+    line-height: 1;
+    flex-shrink: 0;
+    margin-top: -6px;
+}
+
+.fitout-quote p {
+    font-family: var(--font-serif);
+    font-size: 0.95rem;
+    color: var(--white);
+    line-height: 1.7;
+    font-style: italic;
+    margin: 0;
+}
+
+/* Gallery */
+.fitout-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.fitout-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.fitout-gallery-main {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    height: 300px;
+    box-shadow: 0 16px 48px rgba(0,0,0,0.45);
+    border: 2px solid rgba(255,255,255,0.12);
+}
+
+.fitout-gallery-main img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.fitout-gallery-main:hover img { transform: scale(1.04); }
+
+.fitout-gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.fitout-gallery-thumb {
+    border-radius: var(--radius);
+    overflow: hidden;
+    height: 150px;
+    border: 2px solid rgba(255,255,255,0.1);
+}
+
+.fitout-gallery-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.fitout-gallery-thumb:hover img { transform: scale(1.07); }
+
+.fitout-gallery-row { display: none; }
+
+@media (max-width: 1024px) {
+    .fitout-layout { grid-template-columns: 1fr; gap: 48px; }
+}
+
+@media (max-width: 600px) {
+    .fitout-gallery-main { height: 220px; }
+    .fitout-gallery-thumb { height: 140px; }
+}
+
+/* ── Civil Comprehensive Solutions ── */
+.civil-comprehensive {
+    background-color: var(--dark);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    padding: 96px 0;
+}
+
+.civil-comprehensive::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+}
+
+.civil-comprehensive .container {
+    position: relative;
+    z-index: 1;
+}
+
+.civil-comprehensive .section-title h2,
+.civil-comprehensive .section-title p,
+.civil-comprehensive .section-tag {
+    color: var(--white);
+}
+
+.civil-comprehensive .section-title p {
+    opacity: 0.8;
+}
+
+.civil-comp-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-top: 56px;
+}
+
+.civil-comp-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: var(--ease);
+}
+
+.civil-comp-card:hover {
+    border-color: var(--primary);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-4px);
+}
+
+.civil-comp-img {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.civil-comp-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.civil-comp-card:hover .civil-comp-img img {
+    transform: scale(1.06);
+}
+
+.civil-comp-body {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.civil-comp-card h3 {
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--dark);
+    line-height: 1.4;
+}
+
+.civil-comp-card p {
+    font-family: var(--font-sans);
+    font-size: 0.875rem;
+    color: var(--muted);
+    line-height: 1.6;
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+    .civil-comp-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+    .civil-comp-grid { grid-template-columns: 1fr; }
+}
+
 .about-card {
     background: var(--white);
     padding: 48px 44px;
