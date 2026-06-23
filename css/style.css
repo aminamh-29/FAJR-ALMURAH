@@ -977,6 +977,158 @@ html{ scroll-behavior: smooth; }
     .fitout-gallery-thumb { height: 140px; }
 }
 
+/* ── Fitout Services ── */
+.fitout-services {
+    background: var(--white);
+    padding: 96px 0;
+}
+
+/* Numbered cards */
+.fs-numbered-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    margin-top: 56px;
+}
+
+.fs-numbered-card {
+    position: relative;
+    background: var(--light);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 36px 28px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    overflow: hidden;
+    transition: var(--ease);
+}
+
+.fs-numbered-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: var(--primary);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.35s ease;
+}
+
+.fs-numbered-card:hover { box-shadow: var(--shadow-md); transform: translateY(-4px); }
+.fs-numbered-card:hover::before { transform: scaleX(1); }
+
+.fs-num {
+    font-family: var(--font-serif);
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--border);
+    line-height: 1;
+    position: absolute;
+    top: 20px;
+    right: 24px;
+}
+
+.fs-icon {
+    width: 52px;
+    height: 52px;
+    background: var(--primary);
+    border-radius: var(--radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.fs-icon svg {
+    width: 24px;
+    height: 24px;
+    stroke: var(--white);
+}
+
+.fs-numbered-card h3 {
+    font-family: var(--font-sans);
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--dark);
+}
+
+.fs-numbered-card p {
+    font-family: var(--font-sans);
+    font-size: 0.875rem;
+    color: var(--muted);
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Divider */
+.fs-divider {
+    height: 1px;
+    background: var(--border);
+    margin: 56px 0;
+}
+
+/* Bullet grid */
+.fs-bullet-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.fs-bullet-card {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    background: var(--dark);
+    border-radius: var(--radius-lg);
+    padding: 24px 20px;
+    transition: var(--ease);
+}
+
+.fs-bullet-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+
+.fs-bullet-icon {
+    width: 44px;
+    height: 44px;
+    background: var(--primary);
+    border-radius: var(--radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.fs-bullet-icon svg {
+    width: 20px;
+    height: 20px;
+    stroke: var(--white);
+}
+
+.fs-bullet-card h4 {
+    font-family: var(--font-sans);
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 6px;
+}
+
+.fs-bullet-card p {
+    font-family: var(--font-sans);
+    font-size: 0.82rem;
+    color: rgba(255,255,255,0.6);
+    line-height: 1.6;
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+    .fs-numbered-row { grid-template-columns: 1fr; }
+    .fs-bullet-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+    .fs-bullet-grid { grid-template-columns: 1fr; }
+}
+
 /* ── Civil Comprehensive Solutions ── */
 .civil-comprehensive {
     background-color: var(--dark);
