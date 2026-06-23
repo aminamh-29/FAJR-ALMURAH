@@ -606,8 +606,8 @@ html{ scroll-behavior: smooth; }
 .civil-works-layout {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 64px;
-    align-items: center;
+    gap: 60px;
+    align-items: start;
 }
 
 .civil-works-content {
@@ -747,9 +747,8 @@ html{ scroll-behavior: smooth; }
 .civil-works-gallery {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 200px 1fr 1fr;
-    gap: 14px;
-    height: 580px;
+    grid-template-rows: 220px 160px 160px;
+    gap: 12px;
 }
 
 .civil-img-featured {
