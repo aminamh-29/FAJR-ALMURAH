@@ -1,26 +1,29 @@
 :root {
 
     /* Brand Colors */
-    --navy:        #0A1F3C;
-    --navy-mid:    #0D2B52;
+    --navy:        #08182E;
+    --navy-mid:    #0B2444;
     --blue:        #0057B8;
     --blue-dark:   #003F88;
-    --gold:        #C9A84C;
-    --gold-light:  #E5C97A;
+    --gold:        #B8922A;
+    --gold-light:  #D4AE5C;
+    --primary:     #B8922A;
+    --primary-light: rgba(184,146,42,0.12);
 
     /* Neutral */
     --white:       #FFFFFF;
-    --off-white:   #F9F7F4;
-    --light:       #F4F6FA;
-    --border:      #E2E8F0;
-    --text:        #4A5568;
-    --text-dark:   #1A202C;
-    --text-light:  #718096;
+    --off-white:   #FAF8F5;
+    --light:       #F5F5F0;
+    --border:      #E4E0D8;
+    --text:        #4A4A4A;
+    --text-dark:   #1A1A1A;
+    --text-muted:  #6B6B6B;
+    --text-light:  #8A8A8A;
 
-    /* Shadows */
-    --shadow-sm:   0 2px 8px  rgba(0, 0, 0, 0.06);
-    --shadow-md:   0 8px 24px rgba(0, 0, 0, 0.10);
-    --shadow-lg:   0 20px 60px rgba(0, 0, 0, 0.14);
+    /* Shadows — warmer, more refined */
+    --shadow-sm:   0 2px 12px rgba(0, 0, 0, 0.05);
+    --shadow-md:   0 8px 32px rgba(0, 0, 0, 0.09);
+    --shadow-lg:   0 24px 64px rgba(0, 0, 0, 0.13);
 
     /* Radius */
     --radius-sm:   6px;
@@ -30,10 +33,13 @@
     --radius-full: 100px;
 
     /* Transition */
-    --ease:        0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    --ease:        0.38s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+    /* Spacing */
+    --section-padding: 100px;
 
     /* Container */
-    --max-width:   1320px;
+    --max-width:   1280px;
 
     /* Fonts */
     --font-serif:  'Playfair Display', serif;
