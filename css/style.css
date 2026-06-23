@@ -1334,16 +1334,26 @@ html{ scroll-behavior: smooth; }
    VALUES
 ============================================= */
 
-.values { background: var(--off-white); }
+.values {
+    background: var(--navy);
+    background-image:
+        radial-gradient(circle at 20% 50%, rgba(184,146,42,0.06) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(184,146,42,0.04) 0%, transparent 40%);
+}
+
+.values .section-tag { color: var(--gold-light); }
+.values .section-title h2 { color: var(--white); }
+.values .section-title p { color: rgba(255,255,255,0.55); }
 
 .value-card {
-    background: var(--white);
+    background: rgba(255,255,255,0.05);
     padding: 42px 32px;
     border-radius: var(--radius-lg);
-    border: 1px solid var(--border);
+    border: 1px solid rgba(255,255,255,0.08);
     transition: var(--ease);
     position: relative;
     overflow: hidden;
+    backdrop-filter: blur(4px);
 }
 
 .value-card::before {
@@ -1359,8 +1369,9 @@ html{ scroll-behavior: smooth; }
 
 .value-card:hover {
     transform: translateY(-7px);
-    box-shadow: var(--shadow-md);
-    border-color: rgba(184,146,42,0.15);
+    background: rgba(255,255,255,0.09);
+    border-color: rgba(184,146,42,0.3);
+    box-shadow: 0 24px 48px rgba(0,0,0,0.3);
 }
 
 .value-card:hover::before { transform: scaleX(1); }
@@ -1369,26 +1380,26 @@ html{ scroll-behavior: smooth; }
     font-family: var(--font-serif);
     font-size: 52px;
     font-weight: 700;
-    color: rgba(184, 146, 42, 0.12);
+    color: rgba(184, 146, 42, 0.2);
     line-height: 1;
     margin-bottom: 20px;
     transition: color var(--ease);
 }
 
 .value-card:hover .value-number {
-    color: rgba(184, 146, 42, 0.25);
+    color: rgba(184, 146, 42, 0.45);
 }
 
 .value-card h3 {
     font-family: var(--font-serif);
     font-size: 19px;
-    color: var(--navy);
+    color: var(--white);
     margin-bottom: 12px;
     font-weight: 700;
 }
 
 .value-card p {
-    color: var(--text-muted);
+    color: rgba(255,255,255,0.55);
     font-size: 13.5px;
     line-height: 1.85;
 }
@@ -1397,7 +1408,16 @@ html{ scroll-behavior: smooth; }
    SERVICES
 ============================================= */
 
-.services { background: var(--white); }
+.services {
+    background: var(--white);
+    background-image: repeating-linear-gradient(
+        135deg,
+        transparent,
+        transparent 48px,
+        rgba(184,146,42,0.028) 48px,
+        rgba(184,146,42,0.028) 49px
+    );
+}
 
 .service-card {
     background: var(--off-white);
@@ -1461,7 +1481,8 @@ html{ scroll-behavior: smooth; }
 ============================================= */
 
 .specialized-services {
-    background: var(--light);
+    background: var(--navy);
+    background-image: radial-gradient(circle at 70% 60%, rgba(184,146,42,0.07) 0%, transparent 55%);
     padding: var(--section-padding) 0;
 }
 
@@ -1472,14 +1493,17 @@ html{ scroll-behavior: smooth; }
     margin-top: 2.5rem;
 }
 
+.specialized-services .section-tag { color: var(--gold-light); }
+.specialized-services .section-title h2 { color: var(--white); }
+.specialized-services .section-title p { color: rgba(255,255,255,0.55); }
+
 .spec-card {
-    background: var(--white);
+    background: rgba(255,255,255,0.06);
     border-radius: var(--radius-lg);
     padding: 0 0 1.75rem;
     text-align: center;
-    box-shadow: var(--shadow-sm);
-    border: 1px solid var(--border);
-    transition: transform var(--ease), box-shadow var(--ease), border-color var(--ease);
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: transform var(--ease), box-shadow var(--ease), border-color var(--ease), background var(--ease);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1489,8 +1513,9 @@ html{ scroll-behavior: smooth; }
 
 .spec-card:hover {
     transform: translateY(-8px);
-    box-shadow: var(--shadow-md);
-    border-color: rgba(184,146,42,0.25);
+    background: rgba(255,255,255,0.1);
+    box-shadow: 0 20px 48px rgba(0,0,0,0.35);
+    border-color: rgba(184,146,42,0.35);
 }
 
 .spec-card-img {
@@ -1539,14 +1564,14 @@ html{ scroll-behavior: smooth; }
     font-family: var(--font-serif);
     font-size: 1rem;
     font-weight: 700;
-    color: var(--navy);
+    color: var(--white);
     margin: 0;
     padding: 0 1.25rem;
 }
 
 .spec-card p {
     font-size: 0.825rem;
-    color: var(--text-muted);
+    color: rgba(255,255,255,0.55);
     line-height: 1.7;
     margin: 0;
     padding: 0 1.25rem;
@@ -1687,7 +1712,16 @@ html{ scroll-behavior: smooth; }
    FIRE FIGHTING & ELECTRICAL/PLUMBING
 ============================================= */
 
-.fire-elec { background: var(--light); }
+.fire-elec {
+    background: var(--white);
+    background-image: repeating-linear-gradient(
+        135deg,
+        transparent,
+        transparent 48px,
+        rgba(184,146,42,0.028) 48px,
+        rgba(184,146,42,0.028) 49px
+    );
+}
 
 .fire-elec-grid {
     display: grid;
