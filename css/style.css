@@ -1691,7 +1691,7 @@ html{ scroll-behavior: smooth; }
 
 .fire-elec-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 24px;
     margin-top: 56px;
 }
@@ -1760,7 +1760,7 @@ html{ scroll-behavior: smooth; }
     line-height: 1.8;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .fire-elec-grid { grid-template-columns: 1fr; }
 }
 
