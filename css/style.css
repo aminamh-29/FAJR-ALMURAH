@@ -597,6 +597,10 @@ html{ scroll-behavior: smooth; }
     line-height: 1.75;
 }
 
+@media (max-width: 600px) {
+    .core-services-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
 /* =============================================
    CIVIL WORKS
 ============================================= */
@@ -1474,6 +1478,87 @@ html{ scroll-behavior: smooth; }
     color: var(--text-muted);
     font-size: 13.5px;
     line-height: 1.85;
+}
+
+.service-card-link {
+    display: block;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+.service-card-cta {
+    display: inline-block;
+    margin-top: 16px;
+    font-size: 12.5px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: var(--gold);
+    opacity: 0;
+    transform: translateX(-6px);
+    transition: opacity var(--ease), transform var(--ease);
+}
+
+.service-card-link:hover .service-card-cta {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Core Services in About */
+.core-services {
+    margin-top: 36px;
+    padding-top: 28px;
+    border-top: 1px solid var(--border);
+}
+
+.core-services-title {
+    font-family: var(--font-sans);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 18px;
+}
+
+.core-services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.core-service-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 8px;
+    background: var(--off-white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    text-align: center;
+    transition: var(--ease);
+}
+
+.core-service-item:hover {
+    border-color: var(--gold);
+    background: var(--white);
+    box-shadow: var(--shadow-sm);
+}
+
+.core-service-item svg {
+    width: 20px;
+    height: 20px;
+    color: var(--gold);
+    flex-shrink: 0;
+}
+
+.core-service-item span {
+    font-size: 10.5px;
+    font-weight: 600;
+    color: var(--navy);
+    letter-spacing: 0.2px;
+    line-height: 1.3;
 }
 
 /* =============================================
