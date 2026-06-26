@@ -25,6 +25,7 @@
 
             <div class="logo">
                 <span class="logo-fajr">FAJR</span>
+                <span class="logo-sep"></span>
                 <span class="logo-almurah">ALMURAH</span>
             </div>
 
@@ -34,15 +35,17 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#consultancy">Consultancy</a></li>
-                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
 
-            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+            <div class="nav-actions">
+                <a href="#contact" class="nav-cta">Contact Us</a>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
 
         </div>
     </header>
@@ -111,7 +114,7 @@
             <div class="about-layout">
 
                 <div class="about-image fade-up">
-                    <img src="assets/images/about.png" alt="FAJR ALMURAH construction project">
+                    <img src="assets/images/abou.jpeg" alt="FAJR ALMURAH construction project">
                     <div class="about-image-badge">
                         <span class="badge-number">15+</span>
                         <span class="badge-label">Years of Excellence</span>
@@ -123,8 +126,6 @@
                     <span class="section-tag">Who We Are</span>
                     <h2>About Us</h2>
                     <div class="about-divider"></div>
-
-                    
                     <p class="about-intro">
                         FAJR ALMURAH is an emerging innovative contracting company specializing in engineering and construction across the Middle East. We execute civil, commercial, and IT projects with excellence and integrity, delivering high-end general construction solutions for large clients across multiple sectors.
                     </p>
@@ -132,7 +133,6 @@
                     <p class="about-body">
                         Our comprehensive service portfolio includes HVAC &amp; Ducting, Electrical &amp; Plumbing, Civil Construction, Interior Design, Mechanical Works, Fire Fighting Systems, Elevators, Facility Management, and IT Solutions.
                     </p>
-
                     <div class="about-highlights">
                         <div class="about-highlight-item">
                             <span class="highlight-num">01</span>
@@ -420,12 +420,6 @@
                     </div>
                     <div class="civil-img-card">
                         <img src="assets/images/Structural Development.png" alt="Structural Development">
-                    </div>
-                    <div class="civil-img-card">
-                        <img src="assets/images/ab.png" alt="Engineering Supervision">
-                    </div>
-                    <div class="civil-img-card">
-                        <img src="assets/images/r.png" alt="Civil Works">
                     </div>
                 </div>
 
@@ -841,46 +835,60 @@
                 <p>Expert guidance to help your enterprise grow, adapt, and lead in a competitive market.</p>
             </div>
 
-            <div class="consultancy-featured fade-up">
-                <img src="assets/images/ab.png" alt="Consultancy Services">
-            </div>
+            <div class="consultancy-layout">
 
-            <div class="consultancy-grid">
-
-                <div class="consult-card fade-up">
-                    <div class="consult-number">01</div>
-                    <h3>International Enterprise Setup</h3>
-                    <p>Expert guidance for establishing business operations across borders with full regulatory compliance and market entry strategies.</p>
+                <!-- Left: Image -->
+                <div class="consultancy-img-col fade-up">
+                    <div class="consultancy-img-wrap">
+                        <img src="assets/images/bi.jpg" alt="Consultancy Services">
+                        <div class="consultancy-img-badge">
+                            <span class="badge-number">6+</span>
+                            <span class="badge-label">Advisory Services</span>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="consult-card fade-up delay-1">
-                    <div class="consult-number">02</div>
-                    <h3>Industrial Site Procurement</h3>
-                    <p>Strategic identification and acquisition of optimal industrial locations tailored to your operational requirements and growth plans.</p>
-                </div>
+                <!-- Right: Cards -->
+                <div class="consultancy-cards-col">
+                    <div class="consultancy-grid">
 
-                <div class="consult-card fade-up delay-2">
-                    <div class="consult-number">03</div>
-                    <h3>Market Studies &amp; Analyses</h3>
-                    <p>Comprehensive market research and competitive analysis to inform strategic decisions and identify growth opportunities.</p>
-                </div>
+                        <div class="consult-card fade-up">
+                            <div class="consult-number">01</div>
+                            <h3>International Enterprise Setup</h3>
+                            <p>Expert guidance for establishing business operations across borders with full regulatory compliance and market entry strategies.</p>
+                        </div>
 
-                <div class="consult-card fade-up">
-                    <div class="consult-number">04</div>
-                    <h3>Organizational Transformation</h3>
-                    <p>End-to-end support for restructuring and modernizing your organization to achieve operational excellence and efficiency.</p>
-                </div>
+                        <div class="consult-card fade-up delay-1">
+                            <div class="consult-number">02</div>
+                            <h3>Industrial Site Procurement</h3>
+                            <p>Strategic identification and acquisition of optimal industrial locations tailored to your operational requirements and growth plans.</p>
+                        </div>
 
-                <div class="consult-card fade-up delay-1">
-                    <div class="consult-number">05</div>
-                    <h3>Financial &amp; Investment Guidance</h3>
-                    <p>Strategic financial planning and investment advisory services to maximize returns and ensure sustainable business growth.</p>
-                </div>
+                        <div class="consult-card fade-up delay-2">
+                            <div class="consult-number">03</div>
+                            <h3>Market Studies &amp; Analyses</h3>
+                            <p>Comprehensive market research and competitive analysis to inform strategic decisions and identify growth opportunities.</p>
+                        </div>
 
-                <div class="consult-card fade-up delay-2">
-                    <div class="consult-number">06</div>
-                    <h3>Risk Management &amp; Compliance</h3>
-                    <p>Proactive risk assessment and regulatory compliance frameworks to protect your business and ensure operational continuity.</p>
+                        <div class="consult-card fade-up">
+                            <div class="consult-number">04</div>
+                            <h3>Organizational Transformation</h3>
+                            <p>End-to-end support for restructuring and modernizing your organization to achieve operational excellence and efficiency.</p>
+                        </div>
+
+                        <div class="consult-card fade-up delay-1">
+                            <div class="consult-number">05</div>
+                            <h3>Financial &amp; Investment Guidance</h3>
+                            <p>Strategic financial planning and investment advisory services to maximize returns and ensure sustainable business growth.</p>
+                        </div>
+
+                        <div class="consult-card fade-up delay-2">
+                            <div class="consult-number">06</div>
+                            <h3>Risk Management &amp; Compliance</h3>
+                            <p>Proactive risk assessment and regulatory compliance frameworks to protect your business and ensure operational continuity.</p>
+                        </div>
+
+                    </div>
                 </div>
 
             </div>
@@ -892,59 +900,83 @@
     <section class="equip-rental" id="equipment-rental-detail">
         <div class="container">
 
-            <div class="equip-rental-layout">
+            <div class="equip-rental-header fade-up">
+                <span class="section-tag">Equipment Rental Service</span>
+                <h2>Equipment Rental</h2>
+                <div class="about-divider"></div>
+                <p>FAJR ALMURAH offers premium equipment rental, industrial operations, transportation support, and construction solutions — built on quality, reliability, and operational excellence.</p>
+            </div>
 
-                <!-- Left: Intro -->
-                <div class="equip-rental-intro fade-up">
-                    <span class="section-tag">Equipment Rental Service</span>
-                    <h2>Equipment Rental Service</h2>
-                    <div class="about-divider"></div>
-                    <p>FAJR ALMURAH offers equipment rental, industrial operations, transportation support, and construction equipment solutions. We focus on quality, reliability, operational excellence, and customer satisfaction.</p>
+            <div class="equip-rental-grid fade-up delay-1">
+
+                <div class="equip-card">
+                    <div class="equip-card-img">
+                        <img src="assets/images/f.jpg" alt="Heavy Lifting Equipment">
+                        <div class="equip-card-overlay">
+                            <span class="equip-card-num">01</span>
+                        </div>
+                    </div>
+                    <div class="equip-card-body">
+                        <h3>Heavy Lifting Equipment</h3>
+                        <p>Cranes, forklifts, and heavy-duty machinery for demanding construction lifts.</p>
+                        <div class="equip-card-line"></div>
+                    </div>
                 </div>
 
-                <!-- Right: Equipment Categories -->
-                <div class="equip-rental-grid fade-up delay-1">
-
-                    <div class="equip-card">
-                        <div class="equip-card-img">
-                            <img src="assets/images/f.jpg" alt="Heavy Lifting Equipment">
-                        </div>
-                        <div class="equip-card-num">01</div>
-                        <div class="equip-card-body">
-                            <h3>Heavy Lifting Equipment</h3>
+                <div class="equip-card">
+                    <div class="equip-card-img">
+                        <img src="assets/images/you.png" alt="Earthmoving Equipment">
+                        <div class="equip-card-overlay">
+                            <span class="equip-card-num">02</span>
                         </div>
                     </div>
+                    <div class="equip-card-body">
+                        <h3>Earthmoving Equipment</h3>
+                        <p>Graders, scrapers, and loaders for large-scale land shaping and site clearance.</p>
+                        <div class="equip-card-line"></div>
+                    </div>
+                </div>
 
-                    <div class="equip-card">
-                        <div class="equip-card-img">
-                            <img src="assets/images/y.png" alt="Construction Equipment">
-                        </div>
-                        <div class="equip-card-num">02</div>
-                        <div class="equip-card-body">
-                            <h3>Construction Equipment</h3>
+                <div class="equip-card">
+                    <div class="equip-card-img">
+                        <img src="assets/images/qwe.jpeg" alt="Construction Equipment">
+                        <div class="equip-card-overlay">
+                            <span class="equip-card-num">03</span>
                         </div>
                     </div>
+                    <div class="equip-card-body">
+                        <h3>Construction Equipment</h3>
+                        <p>Excavators, bulldozers, and compactors for efficient site preparation and earthwork.</p>
+                        <div class="equip-card-line"></div>
+                    </div>
+                </div>
 
-                    <div class="equip-card">
-                        <div class="equip-card-img">
-                            <img src="assets/images/p.webp" alt="Transportation Equipment">
-                        </div>
-                        <div class="equip-card-num">03</div>
-                        <div class="equip-card-body">
-                            <h3>Transportation Equipment</h3>
+                <div class="equip-card">
+                    <div class="equip-card-img">
+                        <img src="assets/images/equip.jpg" alt="Transportation Equipment">
+                        <div class="equip-card-overlay">
+                            <span class="equip-card-num">04</span>
                         </div>
                     </div>
+                    <div class="equip-card-body">
+                        <h3>Transportation Equipment</h3>
+                        <p>Trucks and trailers for material haulage and logistics across project sites.</p>
+                        <div class="equip-card-line"></div>
+                    </div>
+                </div>
 
-                    <div class="equip-card">
-                        <div class="equip-card-img">
-                            <img src="assets/images/0.webp" alt="Power Equipment">
-                        </div>
-                        <div class="equip-card-num">04</div>
-                        <div class="equip-card-body">
-                            <h3>Power Equipment</h3>
+                <div class="equip-card equip-card-wide">
+                    <div class="equip-card-img">
+                        <img src="assets/images/power.png" alt="Power Equipment">
+                        <div class="equip-card-overlay">
+                            <span class="equip-card-num">05</span>
                         </div>
                     </div>
-
+                    <div class="equip-card-body">
+                        <h3>Power Equipment</h3>
+                        <p>Generators, compressors, and power units to keep operations running continuously.</p>
+                        <div class="equip-card-line"></div>
+                    </div>
                 </div>
 
             </div>
@@ -965,25 +997,32 @@
             <div class="contact-wrapper fade-up">
 
                 <div class="contact-info">
-                    <h3>Let's talk</h3>
+                    <h3>Let's Build Together</h3>
+                    <div class="contact-divider"></div>
                     <p>We're here to answer your questions and discuss how we can support your vision across the Middle East.</p>
                     <ul class="contact-details">
                         <li>
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
-                            </svg>
+                            <div class="contact-detail-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+                                </svg>
+                            </div>
                             <span>Middle East Region</span>
                         </li>
                         <li>
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.91A16 16 0 0 0 16 17l.96-.96a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-                            </svg>
+                            <div class="contact-detail-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.91A16 16 0 0 0 16 17l.96-.96a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                </svg>
+                            </div>
                             <span>Available upon inquiry</span>
                         </li>
                         <li>
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
-                            </svg>
+                            <div class="contact-detail-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </div>
                             <span>info@fajralmurah.com</span>
                         </li>
                     </ul>
@@ -1018,6 +1057,7 @@
 
     <!-- FOOTER -->
     <footer>
+        <div class="footer-top-bar"></div>
         <div class="container">
 
             <div class="footer-grid">
@@ -1027,8 +1067,19 @@
                         <span class="logo-fajr">FAJR</span>
                         <span class="logo-almurah">ALMURAH</span>
                     </div>
-                    <p>Building Excellence.<br>Creating Futures.</p>
+                    <p class="footer-brand-tagline">Building Excellence.<br>Creating Futures.</p>
                     <p class="footer-tagline">Engineering &amp; Construction across the Middle East.</p>
+                    <div class="footer-brand-divider"></div>
+                    <div class="footer-contact-mini">
+                        <a href="mailto:info@fajralmurah.com" class="footer-contact-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            info@fajralmurah.com
+                        </a>
+                        <span class="footer-contact-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            Middle East Region
+                        </span>
+                    </div>
                 </div>
 
                 <div class="footer-col">
@@ -1039,6 +1090,7 @@
                         <li><a href="#services">HVAC &amp; Ducting</a></li>
                         <li><a href="#services">Electrical &amp; Plumbing</a></li>
                         <li><a href="#services">Fire Fighting</a></li>
+                        <li><a href="#services">IT Solutions</a></li>
                     </ul>
                 </div>
 
@@ -1056,6 +1108,7 @@
 
             <div class="footer-bottom">
                 <p>&copy; 2026 FAJR ALMURAH. All Rights Reserved.</p>
+                <p class="footer-bottom-right">Building the Middle East's Future</p>
             </div>
 
         </div>
