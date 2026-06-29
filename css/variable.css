@@ -1,29 +1,29 @@
 :root {
 
     /* Brand Colors */
-    --navy:        #08182E;
-    --navy-mid:    #0B2444;
-    --blue:        #0057B8;
-    --blue-dark:   #003F88;
-    --gold:        #B8922A;
-    --gold-light:  #D4AE5C;
-    --primary:     #B8922A;
-    --primary-light: rgba(184,146,42,0.12);
+    --navy:        #000000;
+    --navy-mid:    #080808;
+    --blue:        #4B6EC8;
+    --blue-dark:   #1E3272;
+    --gold:        #4B6EC8;
+    --gold-light:  #7B95D8;
+    --primary:     #4B6EC8;
+    --primary-light: rgba(75,110,200,0.12);
 
     /* Neutral */
     --white:       #FFFFFF;
     --off-white:   #FAF8F5;
-    --light:       #F5F5F0;
-    --border:      #E4E0D8;
-    --text:        #4A4A4A;
-    --text-dark:   #1A1A1A;
-    --text-muted:  #6B6B6B;
-    --text-light:  #8A8A8A;
+    --light:       #0f0f0f;
+    --border:      #1e1e2e;
+    --text:        #c8d0e0;
+    --text-dark:   #e8eaf0;
+    --text-muted:  #8a94a8;
+    --text-light:  #6a7488;
 
-    /* Shadows — warmer, more refined */
-    --shadow-sm:   0 2px 12px rgba(0, 0, 0, 0.05);
-    --shadow-md:   0 8px 32px rgba(0, 0, 0, 0.09);
-    --shadow-lg:   0 24px 64px rgba(0, 0, 0, 0.13);
+    /* Shadows */
+    --shadow-sm:   0 2px 12px rgba(0, 0, 0, 0.25);
+    --shadow-md:   0 8px 32px rgba(0, 0, 0, 0.45);
+    --shadow-lg:   0 24px 64px rgba(0, 0, 0, 0.60);
 
     /* Radius */
     --radius-sm:   6px;
