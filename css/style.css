@@ -2269,6 +2269,14 @@ html{ scroll-behavior: smooth; }
     margin-top: 56px;
 }
 
+.mechit-grid--pair {
+    grid-template-columns: repeat(2, minmax(0, 340px));
+    justify-content: center;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .mechit-card {
     background: var(--navy);
     color: var(--white);
