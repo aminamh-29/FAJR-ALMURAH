@@ -264,7 +264,7 @@ Potential improvements for future versions include:
 
 Name: Amina
 
-GitHub: https://github.com/aminamh-29
+GitHub: https://github.com/aminamh-29/FAJR-ALMURAH
 
 ## Repository Summary
 
